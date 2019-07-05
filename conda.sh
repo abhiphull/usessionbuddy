@@ -1,3 +1,6 @@
+#!/bin/sh
+username=arpanphull
+ip_address=92.23.41.151
 
 if [ ! -d ~/sessions ]; then
     mkdir -p ~/sessions
