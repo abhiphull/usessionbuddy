@@ -7,10 +7,13 @@ git clone https://github.com/abhiphull/usessionbuddy
 cd usessionbuddy
 python setup.py <usession buddy username> <ip address from you are uploading your session and history>
 
-#note:
+#Note 1:
 1. Above command will copy conda.sh file to /etc/profile.d/ which will be run every time you login. Therefore before logging out, do ssh from another terminal window to make sure everything is fine.
 2. If you can't login because of the conda.sh you can delete it by ssh host "rm -f /etc/profile.d/conda.sh"
 
+#Note 2:
+  Add a TMOUT setting in your bashrc so as not to record idle sessions.
+  
 #Requirements 
 
 TermRecord to capture the session
