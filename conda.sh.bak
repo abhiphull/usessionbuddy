@@ -29,8 +29,8 @@ then
         hf=${usession_hist_f}_${uniqueid}.prev
         if [ -f $hf ] && [ -f $sf ];then
             echo "Running following command background \n"
-            echo "curl --header 'Content-Type: multipart/form-data' -XPOST -F hf=@$hf -F sf=@$sf -F \"username=${username}\"  http://localhost:5000"
-            curl --header 'Content-Type: multipart/form-data' -XPOST -F hf=@$hf -F sf=@$sf -F "username=${username}"  http://localhost:5000 &
+            echo "curl --header 'Content-Type: multipart/form-data' -XPOST -F hf=@$hf -F sf=@$sf -F \"username=${username}\"  http://94.23.41.151:5000"
+            curl --header 'Content-Type: multipart/form-data' -XPOST -F hf=@$hf -F sf=@$sf -F "username=${username}"  http://94.23.41.151:5000 &
             echo "\n"
         fi
     fi
