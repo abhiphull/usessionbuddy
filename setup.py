@@ -28,8 +28,11 @@ os.system('pip install TermRecord')
 ##setting timeout for zsh and bash
 
 os.system('cp -p ~/.bashrc ~/.bashrc.usessionbuddy.bak')
+os.system('cp -p ~/.zshrc ~/.zshrc.usessionbuddy.bak')
 os.system('echo "TMOUT=500" >> ~/.bashrc')
+os.system('echo "TMOUT=500" >> ~/.zshrc')
 os.system('echo "export TMOUT" >> ~/.bashrc')
+os.system('echo "export TMOUT" >> ~/.zshrc')
 os.system('echo "#!/bin/sh" > conda.sh')
 os.system("echo username=%s >> conda.sh"%username)
 os.system("echo ip_address=%s >> conda.sh"%ip_address)
