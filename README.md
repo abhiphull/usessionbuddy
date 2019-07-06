@@ -27,5 +27,5 @@ TermRecord to capture the session
   b. To upload files from your server; authenticate it from your server using following cmd line...
     curl -i --header 'Content-Type: multipart/form-data' -F "username=usessionbuddy username"  http://api.usessionbuddy.com/authenticate
 5. If you don't want to set up auto upload by setup.py then once you have authenticated, you can also upload recorded session and command line history using...
-    curl --header 'Content-Type: multipart/form-data' -XPOST -F hf=<cmdline history file> -F sf=<script/termrecord session html file or video> -F "username="usessionbuddy username" -F "ip_address=ip adress of ur server" http://api.usessionbuddy.com
+    curl --header 'Content-Type: multipart/form-data' -XPOST -F "hf="cmdline history file" -F sf=<script/termrecord session html file or video> -F "username="usessionbuddy username" -F "ip_address=ip adress of ur server" http://api.usessionbuddy.com
 
