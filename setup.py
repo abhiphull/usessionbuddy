@@ -25,7 +25,7 @@ if os.path.isfile('conda.sh'):
     os.system('rm -f conda.sh')
 
 os.system('pip install TermRecord')
-##setting timeout for zsh and bash
+##setting timeout for zsh and bash and screenrc
 
 os.system('cp -p ~/.bashrc ~/.bashrc.usessionbuddy.bak')
 os.system('cp -p ~/.zshrc ~/.zshrc.usessionbuddy.bak')
@@ -33,6 +33,7 @@ os.system('echo "TMOUT=500" >> ~/.bashrc')
 os.system('echo "TMOUT=500" >> ~/.zshrc')
 os.system('echo "export TMOUT" >> ~/.bashrc')
 os.system('echo "export TMOUT" >> ~/.zshrc')
+os.system('echo "idle 600 pow_detach" >> ~/.screenrc')
 os.system('echo "#!/bin/sh" > conda.sh')
 os.system("echo username=%s >> conda.sh"%username)
 os.system("echo ip_address=%s >> conda.sh"%ip_address)
