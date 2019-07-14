@@ -23,7 +23,7 @@ TermRecord to capture the session
 2.  Usession Buddy also captures the command history
 3.  Both the session and command line history are uploaded to users account on Usession Buddy. These files are not public, therefore only Owner of the files can view these files.
 4.  User has to have Usession Buddy account for the files to be uploaded.
-  a. Create account on http://usessionbuddy.com
+  a. Create account on https://www.usessionbuddy.com
   b. To upload files from your server; authenticate it from your server using following cmd line...
     curl -i --header 'Content-Type: multipart/form-data' -F "username=usessionbuddy username"  http://api.usessionbuddy.com/authenticate
 5. If you don't want to set up auto upload by setup.py then once you have authenticated, you can also upload recorded session and command line history using...
