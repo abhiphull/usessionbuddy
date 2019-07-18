@@ -1,4 +1,4 @@
-#!/home/anaconda3/bin/python
+#!/bin/python
 import os
 import sys
 import argparse
