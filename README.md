@@ -5,8 +5,11 @@ Save and Share your Unix sessions easily. Go back in time and check your session
 git clone https://github.com/abhiphull/usessionbuddy
 
 Method 1.
-  Run this as root.
+
+  Run this as root
+  
   cd usessionbuddy
+  
   python setup.py <usession buddy username> <ip address from you are uploading your session and history>
 
   #Note 1:
