@@ -15,6 +15,7 @@ Method 1.
 
   #Note 2:
     Add a TMOUT setting in your bashrc so as not to record idle sessions.
+    
 Method 2. (As root user)
   1. pip install TermRecord
   2. pip install sh
