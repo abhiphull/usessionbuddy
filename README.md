@@ -4,15 +4,26 @@ Save and Share your Unix sessions easily. Go back in time and check your session
 #To install
 git clone https://github.com/abhiphull/usessionbuddy
 
-cd usessionbuddy
-python setup.py <usession buddy username> <ip address from you are uploading your session and history>
+Method 1.
+  Run this as root.
+  cd usessionbuddy
+  python setup.py <usession buddy username> <ip address from you are uploading your session and history>
 
-#Note 1:
-1. Above command will copy conda.sh file to /etc/profile.d/ which will be run every time you login. Therefore before logging out, do ssh from another terminal window to make sure everything is fine.
-2. If you can't login because of the conda.sh you can delete it by ssh host "rm -f /etc/profile.d/conda.sh"
+  #Note 1:
+  1. Above command will copy conda.sh file to /etc/profile.d/ which will be run every time you login. Therefore before logging out, do ssh from another terminal window to make sure everything is fine.
+  2. If you can't login because of the conda.sh you can delete it by ssh host "rm -f /etc/profile.d/conda.sh"
 
-#Note 2:
-  Add a TMOUT setting in your bashrc so as not to record idle sessions.
+  #Note 2:
+    Add a TMOUT setting in your bashrc so as not to record idle sessions.
+Method 2. (As root user)
+  1. pip install TermRecord
+  2. pip install sh
+  3. cd usessionbuddy/youupload
+  3. vi start_termrecord.py and check if you have the Python path correct
+  4. vi upload_session_buddy.py and check if you have the Python path correct
+  5. chmod +x start_termrecord.py upload_session_buddy.py
+  6. cp start_termrecord.py upload_session_buddy.py /usr/local/bin/
+  7. Exit and re-enter your shell
   
 #Requirements 
 
